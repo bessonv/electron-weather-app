@@ -1,0 +1,21 @@
+{
+  "name": "electron-weather-app",
+  "version": "0.1.0",
+  "description": "Simple weather app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "weather",
+    "yandex",
+    "api"
+  ],
+  "author": "Denis Bessonov",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.0.2",
+    "unirest": "^0.6.0"
+  }
+}
