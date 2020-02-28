@@ -1,0 +1,49 @@
+.active {
+    border: 1px solid blue;
+}
+
+.content {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.weather-image {
+    height: 100px;
+    width: 100px;
+}
+
+.weather-image.image-sun {
+    background: url(../img/icons/sun.svg) 0 0 no-repeat;
+}
+
+.weather-image.image-cloudy {
+    background: url(../img/icons/cloudy.svg) 0 0 no-repeat;
+}
+
+.weather-image.image-cloud {
+    background: url(../img/icons/cloud.svg) 0 0 no-repeat; 
+}
+
+.weather-image.image-raining {
+    background: url(../img/icons/raining.svg) 0 0 no-repeat;
+}
+
+.weather-image.image-storm {
+    background: url(../img/icons/storm.svg) 0 0 no-repeat;
+}
+
+.weather-image.image-snow {
+    background: url(../img/icons/snow.svg) 0 0 no-repeat;
+}
+
+.weather-image.image-snow_rain {
+    background: url(../img/icons/rain-snow.svg) 0 0 no-repeat;
+}
