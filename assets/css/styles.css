@@ -1,5 +1,44 @@
+body {
+    margin: 0;
+    background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../img/background.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #fff;
+}
+
+.container {
+    max-width: 750px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.tab-bar {
+    height: 50px;
+}
+
+.tab {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #fff;
+    background-color: #00000040;
+}
+
 .active {
-    border: 1px solid blue;
+    background: #00000090;
 }
 
 .content {
@@ -13,11 +52,35 @@
 .row {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.column-left, .columnt-right {
+    text-align: center;
+}
+
+.weather-title {
+    font-size: 40px;
+}
+
+.weather-date {
+    font-size: 30px;
+}
+
+.weather-result {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.weather-temp {
+    font-size: 86px;
 }
 
 .weather-image {
     height: 100px;
     width: 100px;
+    margin: auto;
 }
 
 .weather-image.image-sun {
@@ -47,3 +110,29 @@
 .weather-image.image-snow_rain {
     background: url(../img/icons/rain-snow.svg) 0 0 no-repeat;
 }
+
+.weather-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .weather-table td, .weather-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .weather-table tr:nth-child(even){
+      background-color: #00000050;
+    }
+  
+  .weather-table tr:hover {
+      background-color: #00000090;
+    }
+  
+  .weather-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00000090;
+    color: white;
+  }

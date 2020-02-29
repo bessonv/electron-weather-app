@@ -8,43 +8,45 @@
     <title>Погода</title>
   </head>
   <body>
-    <h1>Погода</h1>
-    <div id="tab-bar">
-        <button class="tab active" id="tab-today">На сегодня</button>
-        <button class="tab" id="tab-week">На неделю</button>
+    <div class="container">
+      <h1 class="weather-title">Погода</h1>
+      <div class="tab-bar">
+          <button class="tab active" id="tab-today">На сегодня</button>
+          <button class="tab" id="tab-week">На неделю</button>
+      </div>
+      <section id="today-results" class="content display">
+          <div class="weather-date"><span id="time"></span>, <span id="day"></span>, <span id="date"></span></div>
+          <div class="row">
+              <div class="column-left">
+                  <div class="weather-temp"><span id="temp"></span>℃</div>
+                  <div class="weather-temp-feels weather-result">Ощущается как <span id="feels-temp"></span>℃</div>
+              </div>
+              <div class="columnt-right">
+                  <div class="weather-image" id="image-icon"></div>
+                  <div class="weather-condition weather-result" id="condition"></div>
+              </div>
+          </div>
+          <div class="weather-result">Давление:  <span id="pressure"></span><span> мм рт. ст.</span></div>
+          <div class="weather-result">Ветер:  <span id="wind"></span><span> м/с</span></div>
+          <div class="weather-result">Восход:  <span id="sunrise"></span></div>
+          <div class="weather-result">Закат:  <span id="sunset"></span></div>
+      </section>
+      <section id="week-results" class="content">
+          <table class="weather-table" id="weather-forecasts">
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>День недели</th>
+                <th>Осадки</th>
+                <th>Температура</th>
+                <th>Давление</th>
+                <th>Ветер</th>
+              </tr>
+              <tbody></tbody>
+            </thead>
+          </table>
+      </section>
     </div>
-    <section id="today-results" class="content display">
-        <div class="weather-date"><span id="time"></span>, <span id="day"></span>, <span id="date"></span></div>
-        <div class="row">
-            <div class="column-left">
-                <div class="weather-temp"><span id="temp"></span>℃</div>
-                <div class="weather-temp-feels">Ощущается как <span id="feels-temp"></span>℃</div>
-            </div>
-            <div class="columnt-right">
-                <div class="weather-image" id="image-icon"></div>
-                <div class="weather-condition" id="condition"></div>
-            </div>
-        </div>
-        <div class="weather-result">Давление:<span id="pressure"></span><span> мм рт.ст.</span></div>
-        <div class="weather-result">Ветер:<span id="wind"></span><span> м/с</span></div>
-        <div class="weather-result">Восход:<span id="sunrise"></span></div>
-        <div class="weather-result">Закат:<span id="sunset"></span></div>
-    </section>
-    <section id="week-results" class="content">
-        <table id="weather-forecasts">
-          <thead>
-            <tr>
-              <th>Дата</th>
-              <th>День недели</th>
-              <th>Осадки</th>
-              <th>Температура</th>
-              <th>Давление</th>
-              <th>Ветер</th>
-            </tr>
-            <tbody></tbody>
-          </thead>
-        </table>
-    </section>
 
     <script src="./renderer.js"></script>
   </body>

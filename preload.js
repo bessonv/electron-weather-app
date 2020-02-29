@@ -92,9 +92,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 `${dayDate.getDate()} ${month[dayDate.getMonth()]}`,
                 dayOfWeek[dayDate.getDay()],
                 conditionsRus[day.parts.day.condition][0],
-                day.parts.day.temp_avg,
-                day.parts.day.pressure_mm,
-                day.parts.day.wind_speed
+                `${day.parts.day.temp_avg} ℃`,
+                `${day.parts.day.pressure_mm} мм рт. ст.`,
+                `${day.parts.day.wind_speed} м/с`
             ]
             addToTable(table, values)
         }
